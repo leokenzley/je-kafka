@@ -21,11 +21,23 @@
   docker compose up -d
 ```
 
-### Publicando mensagem
+### Publicando mensagem String
 ```shell
     curl --location 'http://localhost:8081/producer' \
     --header 'Content-Type: application/json' \
     --data '{
         "message": "Test send message 1"
     }'
+```
+
+### Publicando mensagem JSON
+```shell
+curl --location 'http://localhost:8081/payments' \
+--header 'Content-Type: application/json' \
+--data '{
+    "id": 1,
+    "idUser": 50,
+    "cardNumber": "444.444.444.444.22",
+    "idProduct": 10
+}'
 ```
