@@ -21,5 +21,8 @@ public @interface ConsumerListenerCustom {
 
   @AliasFor(annotation = KafkaListener.class, attribute = "groupId")
   String groupId() default "containerFactory";
+
+  @AliasFor(annotation = KafkaListener.class, attribute = "errorHandler")
+  String errorHandler() default "";
 }
 
