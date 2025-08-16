@@ -1,0 +1,13 @@
+server:
+    port: 8081
+spring:
+  application:
+    name: ekafka-producer
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+kafka-topic:
+  name: str-topic
+  partitions: 2
+  replication-factor: 1

@@ -1,0 +1,11 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: ekafka-consumer
+
+
+kafka-topic:
+  name: str-topic
+  partitions: 2
+  replication-factor: 1

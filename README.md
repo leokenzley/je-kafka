@@ -5,6 +5,8 @@
 - [X] Zookeeper
 - [X] Kafka
 - [X] Kafdrop
+- [X] Java 24
+- [X] Springboot 3.5.4
 
 ```shell
   cd docker && \
@@ -12,6 +14,12 @@
 ```
 #### Para acessar a interface do Kafdrop
 - Acesse o navegador e entre em `http://localhost:9000`
+
+### Execute os projetos
+```shell
+  cd docker && \
+  docker compose up -d
+```
 
 ### Publicando mensagem
 ```shell
