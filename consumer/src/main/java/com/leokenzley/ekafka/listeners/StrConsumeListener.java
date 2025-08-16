@@ -1,5 +1,6 @@
 package com.leokenzley.ekafka.listeners;
 
+import com.leokenzley.ekafka.customer.ConsumerListenerCustom;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class StrConsumeListener {
 
-  @KafkaListener(groupId = "group-1", topics = "${kafka-topic.name}", containerFactory = "containerFactory")
+  @ConsumerListenerCustom(groupId = "group-1")
   public void consume(String message) {
     log.info("Message received: {}", message);
   }
